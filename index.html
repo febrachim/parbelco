@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Site Title</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <style>
+            body {
+                padding-top: 56px;
+            }
+
+            .nav-fixed {
+                position: fixed;
+                right: 0;
+                left: 0;
+                top: 0;
+                margin-bottom: 0px;
+                z-index: 997;
+            }
+
+            .menu-close {
+                margin: 0 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Horizonal Navigation bar -->
+        <nav class="nav-fixed">
+            <div class="nav-wrapper container">
+                <a class="button-collapse right" href="#" data-activates="slide-out" id="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <a id="logo-container" class="brand-logo">
+                    LOGO
+                </a>
+                <!-- Horizontal Navbar links only shown on large resolutions -->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Open</a></li>
+                    <li><a href="#">Save</a></li>
+                    <li><a href="#">Delete All</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav">
+            <li><a href="javascript:;"><i class="material-icons right menu-close">arrow_forward</i></a></li>
+            <li><a href="#">Open</a></li>
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Delete All</a></li>
+        </ul>
+
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav">
+            <li id="menu_load"><a href="#">Open<i class="mdi-file-file-upload left"></i></a></li>
+            <li id="menu_save"><a href="#">Save<i class="mdi-file-file-download left"></i></a></li>
+            <li id="menu_delete"><a href="#">Delete All<i class="mdi-action-delete left"></i></a></li>
+        </ul>
+
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                    </div>
+                    <div class="row center">
+                        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                    </div>
+                    <br><br>
+
+                </div>
+            </div>
+            <div class="parallax"><img src="images/parallax-bg/background1.jpg" alt="Unsplashed background img 1"></div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+
+                <!--Icon Section-->   
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                            <h5 class="center">Speeds up development</h5>
+
+                            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                            <h5 class="center">User Experience Focused</h5>
+
+                            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                            <h5 class="center">Easy to work with</h5>
+
+                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="images/parallax-bg/background2.jpg" alt="Unsplashed background img 2"></div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+
+                <div class="row">
+                    <div class="col s12">
+                        <h3><i class="mdi-content-send brown-text"></i></h3>
+                        <h4>Contact Us</h4>
+                        <form id="contact-form" action="">
+                            <div class="field-set">
+                                <p class="error-step red-text" id="error-step0">Please tell us your name</p>
+                                <div class="input-field" id="field-step0">
+                                    <input id="input-field__name" type="text" class="validate">
+                                    <label for="input-field__name">What's Your Name?</label>
+                                </div>
+                            </div>
+                            <div class="field-set">
+                                <p class="error-step red-text" id="error-step1">Please tell us your company name</p>
+                                <div class="input-field" id="field-step1">
+                                    <input id="input-field__company-name" type="text" class="validate">
+                                    <label for="input-field__company-name">What's Your Company Name?</label>
+                                </div>
+                            </div>
+                            <div class="field-set">
+                                <p class="error-step red-text" id="error-step2">Please tell us about your project</p>
+                                <div class="input-field">
+                                    <textarea id="input-field__project-brief" class="materialize-textarea"></textarea>
+                                    <label for="input-field__project-brief">Tell Us Briefly About Your Project</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="waves-effect waves-light btn" id="submit-contact">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">
+                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="images/parallax-bg/background3.jpg" alt="Unsplashed background img 3"></div>
+        </div>
+
+        <footer class="page-footer teal">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Settings</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/bin/materialize.js"></script>
+        <script src="js/bin/init.js"></script>
+        <script src="js/bin/jquery-ui.min.js"></script>
+
+        <script>
+            var steps = $("#contact-form div.field-set");
+
+            var count = steps.size();
+
+            steps.each(function(i) {
+                $(this).wrap("<div id='step" + i + "'></div>");
+                $(this).append("<p id='step" + i + "commands'></p>");
+
+                if (i === 0) {
+                    createNextButton(i);        // to do
+                    selectStep(i);                  // to do
+                }
+                else if (i === count - 1) {
+                    $("#step" + i).hide();
+                    createPrevButton(i);       // to do
+                }
+                else {
+                    $("#step" + i).hide();
+                    createPrevButton(i);       // to do
+                    createNextButton(i);       // to do
+                }
+            });
+
+            function createPrevButton(i) {
+
+                var stepName = "step" + i;
+
+//                $("#" + stepName + "commands").append("<a href='javascript:;' id='" + stepName + "Prev' class='prev waves-effect waves-light btn'><i class='material-icons'>keyboard_arrow_left</i></a> ");
+//
+//                $("#" + stepName + "Prev").bind("click", function(e) {
+//                    $("#" + stepName).hide();
+//                    $("#step" + (i - 1)).show();
+//                    selectStep(i - 1);
+//                });
+                $("#submit-contact").hide();
+            }
+
+            function createNextButton(i) {
+                $(".error-step").hide();
+                var stepName = "step" + i;
+                $("#" + stepName + "commands").append("<a href='javascript:;' id='" + stepName + "Next' class='next waves-effect waves-light btn'><i class='material-icons'>keyboard_arrow_right</i></a>");
+                $("#" + stepName + "Next").bind("click", function(e) {
+                    if (!$("#field-" + stepName + " input").val()) {
+                        $("#field-" + stepName + " input").addClass("invalid");
+                        $("#error-" + stepName).show("fast");
+                        return false;
+                    } else {
+                        $("#" + stepName).slideUp(300).fadeOut(400);
+//                    Materialize.showStaggeredList("#step" + (i + 1));
+                        $("#step" + (i + 1)).slideDown(300).delay(800).fadeIn(400);
+                        selectStep(i + 1);
+//                        alert("isi dulu!");
+//                        return false;
+                    }
+                    if (i + 2 === count) {
+//                        $("#" + stepName + "Next").hide();
+                        $("#submit-contact").show();
+                    }
+                });
+            }
+
+            function selectStep(i) {
+                $("#steps li").removeClass("current");
+                $("#stepDesc" + i).addClass("current");
+            }
+
+            $("#" + stepName + "Prev").bind("click", function(e) {
+                $("#submit-contact").hide();
+            });
+        </script>
+
+    </body>
+</html>
