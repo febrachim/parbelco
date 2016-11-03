@@ -10,5 +10,16 @@
 
         $('.parallax').parallax();
 
+        $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 250,
+            outDuration: 250,
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '<img src="squares.svg" />', // e.g '<img src="loading.svg" />'
+        });
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
