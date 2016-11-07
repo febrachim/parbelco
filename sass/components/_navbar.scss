@@ -65,7 +65,7 @@ nav {
     }
 
     @media #{$medium-and-down} {
-      left: 10%;
+      left: 50%;
       transform: translateX(-50%);
 
       &.left, &.right {
