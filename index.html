@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Site Title</title>
+        <title>Parbel Technologies</title>
 
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,8 +18,8 @@
     <body>
         <div class="animsition">
             <!-- Horizonal Navigation bar -->
-            <nav class="nav-fixed">
-                <div class="nav-wrapper container">
+            <nav class="nav-fixed hide-on-med-and-down">
+                <div class="nav-wrapper">
                     <a class="button-collapse right" href="#" data-activates="slide-out" id="button-collapse">
                         <i class="material-icons">menu</i>
                     </a>
@@ -43,29 +43,184 @@
                 <li><a href="contact-us.html" class="waves-effect waves-ripple btn grey darken-2 animsition-link">Contact Us</a></li> 
             </ul>
 
-            <div id="index-banner" class="parallax-container parallax-header valign-wrapper">
-                <div class="container">
-                    <h3 class="header col s12 grey-text text-lighten-4 valign" style="margin: 0; font-weight: 300 !important">PARBEL TECHNOLOGY</h3>
-                    <div id="typed-strings">
-                        <p><strong>Design.</strong></p>
-                        <p><strong>Create.</strong></p>
-                        <p><strong>Innovate.</strong></p>
+            <!--MOBILE NAV-->
+            <div class="fixed-action-btn toolbar hide-on-large-only bottom-nav">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">menu</i>
+                </a>
+                <ul>
+                    <li class="waves-effect waves-light">
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                            <div class="bottom-nav__title">Home</div>
+                        </a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="#!">
+                            <i class="material-icons">person_pin</i>
+                            <div class="bottom-nav__title">About</div>
+                        </a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="#!">
+                            <i class="material-icons">view_module</i>
+                            <div class="bottom-nav__title">Our Works</div>
+                        </a>
+                    </li>
+                    <li class="waves-effect waves-light">
+                        <a href="contact-us.html">
+                            <i class="material-icons">comment</i>
+                            <div class="bottom-nav__title">Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--END MOBILE NAV-->
+
+            <div id="index-banner" class="parallax-container parallax-header valign-wrapper center-align">
+                <div class="container" style="padding-top: 56px">
+                    <h3 class="header col s12 grey-text text-lighten-4 valign hide-on-large-only" style="margin: 0; font-weight: 300 !important">PARBEL TECHNOLOGY</h3>
+
+                    <div class="text-scramble"></div>
+
+                    <hr/>
+
+                    <!--                    <div id="typed-strings">
+                                            <p><strong>Design.</strong></p>
+                                            <p><strong>Create.</strong></p>
+                                            <p><strong>Innovate.</strong></p>
+                                        </div>-->
+
+                    <!--<h5 style="font-weight: 300 !important">We <span id="typed" class="white-text"></span></h5>-->
+
+                    <!--<div class="btn-bg bg-3">-->
+                    <div class="btn-custom">
+                        <a class="custom custom-1 waves-effect waves-light" href="#our-work">Start Now</a>
                     </div>
-                    <h5 style="font-weight: 300 !important">We <span id="typed" class="white-text"></span></h5>
-                    <a href="#who-are-we" class="btn waves-effect waves-ripple grey lighten-5 grey-text text-darken-1">WHO ARE WE?</a>
+                    <!--</div>-->
+                    <!--<a style="margin-top: 25px" href="#who-are-we" class="btn waves-effect waves-ripple grey lighten-5 grey-text text-darken-1">Our Works</a>-->
                 </div>
                 <div class="parallax"><img src="images/parallax-bg/bg-header15.jpg" alt="Unsplashed background img 1"></div>
             </div>
 
-
-            <div class="parallax-container parallax-full valign-wrapper" id="who-are-we">
-                <div class="section no-pad-bot">
+            <div class="row" id="our-work" style="padding: 50px 0 20px">
+                <!--<div id="our-work" style="margin-bottom: 25px"></div>-->
+                <div class="col s12 center-align">
+                    <h3 class="grey-text text-darken-3">
+                        Our Works
+                    </h3>
                     <div class="container">
-                        <h4 class="header col s12 light white-text"><span id="speck-of-dust"></span> <span id="speck-btn" style="display: none"><a href="our-work.html" class="btn btn-floating waves-effect waves-ripple grey darken-3 animsition-link"><i class="material-icons">send</i></a></span></h4>
+                        <hr/>
                     </div>
                 </div>
-                <div class="parallax"><img src="images/parallax-bg/bg-header16.jpg" alt="Unsplashed background img 2"></div>
             </div>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/parallax-bg/bg-header4.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Project 1<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">Go to the website</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p class="grey-text text-darken-4">Here is some more information about this product that is only revealed once clicked on.</p>
+                            <p><a href="#">Go to the website</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/parallax-bg/bg-header4.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Project 2<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">Go to the website</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p class="grey-text text-darken-4">Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/parallax-bg/bg-header4.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Project 3<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">Go to the website</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Project 3<i class="material-icons right">close</i></span>
+                            <p class="grey-text text-darken-4">
+                                Nam ultricies fermentum ante at sodales. Nulla tempor magna diam, sed maximus turpis pharetra sit amet. Phasellus bibendum sagittis interdum. Mauris purus sapien, tristique eget quam vel, congue pharetra massa. Sed vitae posuere felis. Aliquam viverra efficitur lorem nec porta. In sollicitudin sodales tellus, non congue diam. Nunc a velit id odio pulvinar laoreet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="parallax-container parallax-full valign-wrapper" id="who-are-we">-->
+<!--            <div class="parallax-container">
+                <div class="section no-pad-bot">
+                    <div class="row" style="padding: 100px 0">
+                        <div class="col s4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/parallax-bg/bg-header4.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">This is a link</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p class="grey-text text-darken-4">Here is some more information about this product that is only revealed once clicked on.</p>
+                                    <p><a href="#">This is a link</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/parallax-bg/bg-header4.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">This is a link</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p class="grey-text text-darken-4">Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="images/parallax-bg/bg-header4.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">This is a link</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p class="grey-text text-darken-4">Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="header col s12 light white-text"><span id="speck-of-dust"></span> <span id="speck-btn" style="display: none"><a href="our-work.html" class="btn btn-floating waves-effect waves-ripple grey darken-3 animsition-link"><i class="material-icons">send</i></a></span></h4>
+
+                </div>
+                <div class="parallax"><img src="images/parallax-bg/bg-header21.jpg" alt="Unsplashed background img 2"></div>
+            </div>-->
 
             <footer class="page-footer grey darken-3">
                 <div class="container">
@@ -102,31 +257,30 @@
                     </div>
                 </div>
             </footer>
-
         </div>
         <!--  Scripts-->
         <script src="js/bin/init.js"></script>
         <script src="lib/typed.js/dist/typed.min.js"></script>
-
+        <script src="js/textScramble.js"></script>
         <script>
             var fullHeight = $(window).height();
-            var header = fullHeight - 56;
+            var header = fullHeight;
             $('.parallax-header').css('height', header);
             $('.parallax-full').css('height', fullHeight);
 
 //            typed.js
-            $(function() {
-                $("#typed").typed({
-                    stringsElement: $('#typed-strings'),
-                    loop: true,
-                    // typing speed
-                    typeSpeed: 50,
-                    // backspacing speed
-                    backSpeed: 10,
-                    // time before backspacing
-                    backDelay: 1700,
-                });
-            });
+//            $(function() {
+//                $("#typed").typed({
+//                    stringsElement: $('#typed-strings'),
+//                    loop: true,
+//                    // typing speed
+//                    typeSpeed: 50,
+//                    // backspacing speed
+//                    backSpeed: 10,
+//                    // time before backspacing
+//                    backDelay: 1700,
+//                });
+//            });
         </script>
 
     </body>
